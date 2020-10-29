@@ -1,10 +1,10 @@
-package thread.tortoise;
 /*   Created by IntelliJ IDEA.
  *   Author: Goldi Maurya
- *   Date: 19-08-2020
+ *   Date: 29-10-2020
  *   Time: 20:04
- *   File: Video.java
+ *   File: Tortoise.java
  */
+package thread.tortoise;
 
 import javax.swing.*;
 
