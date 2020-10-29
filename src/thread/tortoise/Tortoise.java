@@ -1,20 +1,20 @@
 package thread.tortoise;
+/*   Created by IntelliJ IDEA.
+ *   Author: Goldi Maurya
+ *   Date: 19-08-2020
+ *   Time: 20:04
+ *   File: Video.java
+ */
 
 import javax.swing.*;
 
-public class Tortoise implements Runnable {
+public class Tortoise extends Thread {
 
     private static final int MILESTONES = 5;
 
-    private final Thread tortoise;
-
     public Tortoise() {
-        this.tortoise = new Thread(this, "Tortoise");
+        super("Tortoise");
 
-    }
-
-    public Thread getTortoise() {
-        return tortoise;
     }
 
     @Override
