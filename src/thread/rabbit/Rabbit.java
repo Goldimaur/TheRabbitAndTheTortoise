@@ -1,3 +1,10 @@
+/*   Created by IntelliJ IDEA.
+ *   Author: Goldi Maurya
+ *   Date: 19-08-2020
+ *   Time: 20:04
+ *   File: Video.java
+ */
+
 package thread.rabbit;
 
 import javax.swing.*;
