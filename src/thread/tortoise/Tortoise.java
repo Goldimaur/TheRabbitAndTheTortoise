@@ -8,7 +8,7 @@ public class Tortoise implements Runnable {
 
     private final Thread tortoise;
 
-    public Tortoise(Thread tortoise) {
+    public Tortoise() {
         this.tortoise = new Thread(this, "Tortoise");
 
     }
