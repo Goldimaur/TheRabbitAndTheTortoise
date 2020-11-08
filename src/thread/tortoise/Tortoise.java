@@ -10,11 +10,15 @@ import javax.swing.*;
 
 public class Tortoise extends Thread {
 
-    private static final int MILESTONES = 5;
+    private final int MILESTONES = 5;
+    private final Thread tortoise;
 
     public Tortoise() {
-        super("Tortoise");
+        this.tortoise = new Thread(this, "Tortoise");
+    }
 
+    public Thread getTortoise() {
+        return tortoise;
     }
 
     @Override
@@ -32,12 +36,12 @@ public class Tortoise extends Thread {
                     break;
                 case 3:
                     System.out.println("The Tortoise has reached the Big Oak Tree!");
-                    System.out.println("The Tortoise is leading and hence is going to sleep!");
-                    try {
-                        Thread.sleep(18000L);
-                    } catch (InterruptedException e) {
-                        System.err.println("The Tortoise's sleep got interrupted!");
-                    }
+//                    System.out.println("The Tortoise is leading and hence is going to sleep!");
+//                    try {
+//                        Thread.sleep(18000L);
+//                    } catch (InterruptedException e) {
+//                        System.err.println("The Tortoise's sleep got interrupted!");
+//                    }
                     break;
                 case 4:
                     System.out.println("The Tortoise has reached the finish line!");
@@ -51,7 +55,7 @@ public class Tortoise extends Thread {
         }
         JOptionPane.showConfirmDialog(
                 null,
-                "The Tortoise has completed the race!",
+                "The Tortoise has completed the race! and has won ",
                 "Tortoise",
                 JOptionPane.OK_CANCEL_OPTION
         );
